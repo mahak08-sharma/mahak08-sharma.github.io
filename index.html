@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahak Sharma's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav button {
+            margin: 5px;
+            padding: 10px 15px;
+            border: none;
+            background: #0056b3;
+            color: white;
+            cursor: pointer;
+        }
+        nav button:hover {
+            background: #004494;
+        }
+        .content-section {
+            padding: 20px;
+            margin: 10px;
+            border: 1px solid #ccc;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #f1f1f1;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mahak Sharma</h1>
+        <p>Student | Aspiring Developer | Budding Writer</p>
+        <nav>
+            <button onclick="scrollToSection('about')">About Me</button>
+            <button onclick="scrollToSection('writing')">Creative Writing</button>
+            <button onclick="scrollToSection('hobbies')">My Hobbies</button>
+            <button onclick="scrollToSection('experience')">Academic Journey</button>
+            <button onclick="scrollToSection('skills')">Skills</button>
+            <button onclick="scrollToSection('goals')">Future Goals</button>
+            <button onclick="scrollToSection('contact')">Contact Me</button>
+        </nav>
+    </header>
+
+    <section id="about" class="content-section">
+        <h2>About Me</h2>
+        <p>Hey there! I’m Mahak Sharma, a second-year computer science student at Poornima University. I’m passionate about technology, learning, and exploring new avenues. I enjoy programming in Python, dabbling in web development, and growing my computer science knowledge.</p>
+    </section>
+
+    <section id="writing" class="content-section">
+        <h2>Creative Writing</h2>
+        <p>When I'm not coding, I love writing prose, poetry, and stories. Currently, I’m working on my first novel, which I hope to publish soon. Writing is a creative escape for me, and I enjoy experimenting with words to tell meaningful stories.</p>
+    </section>
+
+    <section id="hobbies" class="content-section">
+        <h2>My Hobbies</h2>
+        <ul>
+            <li><span>📚</span> **Books**: I love diving into novels and exploring different worlds through reading.</li>
+            <li><span>✈️</span> **Travel**: Traveling helps me gain new perspectives and fuels my creativity.</li>
+            <li><span>🌱</span> **Gardening**: I find peace in growing plants and being close to nature.</li>
+        </ul>
+    </section>
+
+    <section id="experience" class="content-section">
+        <h2>Academic Journey</h2>
+        <p>Originally from Jaipur, I completed my high school here. I also attempted JEE Mains; though I didn’t clear the cut-off, the experience motivated me to dive deeper into computer science.</p>
+    </section>
+
+    <section id="skills" class="content-section">
+        <h2>Skills</h2>
+        <ul>
+            <li><span>💻</span> Programming: Python (beginner), C (beginner)</li>
+            <li><span>🌐</span> Web Development: HTML, CSS (beginner)</li>
+        </ul>
+    </section>
+
+    <section id="goals" class="content-section">
+        <h2>Future Goals</h2>
+        <ul>
+            <li>Mastering advanced Python and building real-world projects</li>
+            <li>Learning JavaScript to create interactive websites</li>
+            <li>Publishing my novel and growing as a writer</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="content-section">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out to me through:</p>
+        <ul>
+            <li><a href="mailto:mahaksharma@example.com">Email: mahaksharma@example.com</a></li>
+            <li><a href="https://www.linkedin.com/in/mahaksharma/">LinkedIn: Mahak Sharma</a></li>
+            <li><a href="https://github.com/mahaksharma">GitHub: Mahak Sharma</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Mahak Sharma. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
