@@ -1,0 +1,105 @@
+
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styling */
+body {
+    font-family: 'Georgia', serif; /* Classy serif font */
+    background-color: #f9f9f9; /* Light Gray */
+    color: #333; /* Dark Gray */
+    line-height: 1.6;
+    padding: 0 2rem; /* Increased padding for a more spacious layout */
+}
+
+/* Header Styling */
+header {
+    background-color: #4a90e2; /* Soft Blue */
+    color: #ffffff; /* White */
+    padding: 2.5rem;
+    text-align: center;
+    border-radius: 0 0 50px 50px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Playfair Display', serif; /* Elegant font for the header */
+}
+
+/* Content Sections */
+.content-section {
+    max-width: 800px;
+    margin: 1rem auto;
+    padding: 2rem; /* Increased padding for a more spacious feel */
+    background-color: #ffffff; /* White */
+    border-radius: 12px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.content-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.content-section h2 {
+    font-family: 'Playfair Display', serif; /* Elegant font for section headings */
+    color: #4a90e2; /* Soft Blue */
+    margin-bottom: 1rem;
+    font-size: 1.8rem; /* Increased font size for headings */
+}
+
+/* List Styling */
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+ul li {
+    font-size: 1.1rem;
+    color: #555; /* Medium Gray */
+    margin-bottom: 0.5rem;
+}
+
+ul li span {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #4a90e2; /* Soft Blue */
+    color: #ffffff; /* White */
+    margin-top: 2rem;
+    border-radius: 50px 50px 0 0;
+}
+
+/* Link Styling */
+a {
+    color: #4a90e2; /* Soft Blue */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #333; /* Dark Gray on hover */
+}
+
+/* Animation */
+.content-section {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
