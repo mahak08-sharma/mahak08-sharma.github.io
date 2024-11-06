@@ -11,12 +11,14 @@
             margin: 0;
             padding: 0;
             line-height: 1.6;
+            transition: background 0.3s ease-in-out;
         }
         header {
             background: #007BFF;
             color: white;
             padding: 20px;
             text-align: center;
+            border-bottom: 5px solid #0056b3;
         }
         nav button {
             margin: 5px;
@@ -25,9 +27,11 @@
             background: #0056b3;
             color: white;
             cursor: pointer;
+            transition: background 0.3s, transform 0.3s;
         }
         nav button:hover {
             background: #004494;
+            transform: scale(1.05);
         }
         .content-section {
             padding: 20px;
@@ -41,6 +45,71 @@
             position: relative;
             bottom: 0;
             width: 100%;
+        }
+        .progress-bar {
+            height: 20px;
+            background-color: #ddd;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        .progress-bar span {
+            display: block;
+            height: 100%;
+            border-radius: 5px;
+            background-color: #4CAF50;
+        }
+        .skills-list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .skills-list li {
+            margin: 10px 0;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.4);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+        }
+        .modal-content {
+            background-color: #fff;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 24px;
+            }
+
+            nav button {
+                width: 100%;
+                padding: 15px;
+                margin-bottom: 10px;
+            }
         }
     </style>
 </head>
@@ -61,50 +130,55 @@
 
     <section id="about" class="content-section">
         <h2>About Me</h2>
-        <p>Hey there! I’m Mahak Sharma, a second-year computer science student at Poornima University. I’m passionate about technology, learning, and exploring new avenues. I enjoy programming in Python, dabbling in web development, and growing my computer science knowledge.</p>
+        <p>Hello! I'm Mahak Sharma, currently in my second year as a Computer Science student at Poornima University. With a deep passion for technology and problem-solving, I’m eager to dive deeper into the world of programming, particularly in Python. I also have a keen interest in web development and am constantly striving to enhance my knowledge in this domain.</p>
     </section>
 
     <section id="writing" class="content-section">
         <h2>Creative Writing</h2>
-        <p>When I'm not coding, I love writing prose, poetry, and stories. Currently, I’m working on my first novel, which I hope to publish soon. Writing is a creative escape for me, and I enjoy experimenting with words to tell meaningful stories.</p>
+        <p>When I’m not immersed in coding, I love expressing myself through writing. Whether it’s prose, poetry, or short stories, writing provides me a creative outlet. Currently, I am working on my first novel, which I hope to publish soon. Writing has always been my escape, allowing me to craft compelling narratives that capture the imagination.</p>
     </section>
 
     <section id="hobbies" class="content-section">
         <h2>My Hobbies</h2>
         <ul>
-            <li><span>📚</span> **Books**: I love diving into novels and exploring different worlds through reading.</li>
-            <li><span>✈️</span> **Travel**: Traveling helps me gain new perspectives and fuels my creativity.</li>
-            <li><span>🌱</span> **Gardening**: I find peace in growing plants and being close to nature.</li>
+            <li><span>📚</span> **Reading**: I enjoy reading novels that take me to different worlds and offer fresh perspectives.</li>
+            <li><span>✈️</span> **Traveling**: Exploring new places inspires me and fuels my creativity.</li>
+            <li><span>🌱</span> **Gardening**: Being close to nature and nurturing plants is my way of finding calm and tranquility.</li>
         </ul>
     </section>
 
     <section id="experience" class="content-section">
         <h2>Academic Journey</h2>
-        <p>Originally from Jaipur, I completed my high school here. I also attempted JEE Mains; though I didn’t clear the cut-off, the experience motivated me to dive deeper into computer science.</p>
+        <p>I'm from Jaipur and completed my high school here. I pursued the JEE Mains exam, and although I didn’t clear the cut-off, the experience motivated me to focus on the field of Computer Science. This has been a turning point in my academic journey, helping me to dive deeper into programming and problem-solving.</p>
     </section>
 
     <section id="skills" class="content-section">
         <h2>Skills</h2>
-        <ul>
-            <li><span>💻</span> Programming: Python (beginner), C (beginner)</li>
-            <li><span>🌐</span> Web Development: HTML, CSS (beginner)</li>
+        <ul class="skills-list">
+            <li>💻 <strong>Programming Languages</strong>: Python (Beginner), C (Beginner)</li>
+            <li>🌐 <strong>Web Development</strong>: HTML, CSS (Beginner)</li>
+            <li>🔍 <strong>Data Structures & Algorithms (DSA)</strong>: Basic understanding of DSA</li>
+            <li>🖥️ <strong>Operating Systems (OS)</strong>: Understanding of OS concepts like processes, memory management, and file systems.</li>
         </ul>
+        <div class="progress-bar"><span style="width: 60%"></span></div>
+        <div class="progress-bar"><span style="width: 40%"></span></div>
+        <div class="progress-bar"><span style="width: 30%"></span></div>
     </section>
 
     <section id="goals" class="content-section">
         <h2>Future Goals</h2>
         <ul>
-            <li>Mastering advanced Python and building real-world projects</li>
-            <li>Learning JavaScript to create interactive websites</li>
-            <li>Publishing my novel and growing as a writer</li>
+            <li>Master advanced Python programming and build real-world applications</li>
+            <li>Learn JavaScript to create interactive and dynamic websites</li>
+            <li>Publish my first novel and continue to grow as a writer</li>
         </ul>
     </section>
 
     <section id="contact" class="content-section">
         <h2>Contact Me</h2>
-        <p>Feel free to reach out to me through:</p>
+        <p>Feel free to get in touch with me:</p>
         <ul>
-            <li><a href="mailto:mahaksharma@example.com">Email: mahaksharma@example.com</a></li>
+            <li><a href="mailto:2023csmahak16315@poornima.edu.in">Email: 2023csmahak16315@poornima.edu.in</a></li>
             <li><a href="https://www.linkedin.com/in/mahaksharma/">LinkedIn: Mahak Sharma</a></li>
             <li><a href="https://github.com/mahaksharma">GitHub: Mahak Sharma</a></li>
         </ul>
@@ -119,6 +193,26 @@
             const section = document.getElementById(sectionId);
             section.scrollIntoView({ behavior: 'smooth' });
         }
+
+        // Progress bar animation
+        window.addEventListener('scroll', function() {
+            const skillsSection = document.getElementById('skills');
+            const progressBars = document.querySelectorAll('.progress-bar span');
+            const skillsSectionPosition = skillsSection.getBoundingClientRect().top;
+
+            if (skillsSectionPosition < window.innerHeight) {
+                progressBars[0].style.width = "60%";
+                progressBars[1].style.width = "40%";
+                progressBars[2].style.width = "30%";
+            }
+        });
     </script>
 </body>
 </html>
+
+        
+        
+       
+       
+
+  
