@@ -23,53 +23,59 @@
 
     <section id="about" class="content-section">
         <h2>About Me</h2>
-        <p>Hello! I'm Mahak Sharma, currently in my second year as a Computer Science student at Poornima University. With a deep passion for technology and problem-solving, I’m eager to dive deeper into the world of programming, particularly in Python. I also have a keen interest in web development and am constantly striving to enhance my knowledge in this domain.</p>
+        <p>Hello! I'm Mahak Sharma, a second-year computer science student at Poornima University. I'm passionate about coding, technology, and learning new things. I enjoy programming in Python and web development, and I aim to build real-world applications and solutions.</p>
     </section>
 
     <section id="writing" class="content-section">
         <h2>Creative Writing</h2>
-        <p>When I’m not immersed in coding, I love expressing myself through writing. Whether it’s prose, poetry, or short stories, writing provides me a creative outlet. Currently, I am working on my first novel, which I hope to publish soon. Writing has always been my escape, allowing me to craft compelling narratives that capture the imagination.</p>
+        <p>When I’m not coding, I love writing short stories, poems, and experimenting with words to tell meaningful stories. I’m currently working on my first novel, which I hope to publish soon. Writing helps me express my creativity in ways that coding can't.</p>
     </section>
 
     <section id="hobbies" class="content-section">
         <h2>My Hobbies</h2>
         <ul>
-            <li><span>📚</span> <strong>Reading</strong>: I enjoy reading novels that take me to different worlds and offer fresh perspectives.</li>
-            <li><span>✈️</span> <strong>Traveling</strong>: Exploring new places inspires me and fuels my creativity.</li>
-            <li><span>🌱</span> <strong>Gardening</strong>: Being close to nature and nurturing plants is my way of finding calm and tranquility.</li>
+            <li><span>📚</span> <strong>Reading</strong>: Immersing myself in different worlds through books.</li>
+            <li><span>✈️</span> <strong>Traveling</strong>: Exploring new places to fuel my creativity.</li>
+            <li><span>🌱</span> <strong>Gardening</strong>: Finding peace and joy in taking care of plants.</li>
         </ul>
     </section>
 
     <section id="experience" class="content-section">
         <h2>Academic Journey</h2>
-        <p>I'm from Jaipur and completed my high school here. I pursued the JEE Mains exam, and although I didn’t clear the cut-off, the experience motivated me to focus on the field of Computer Science. This has been a turning point in my academic journey, helping me to dive deeper into programming and problem-solving.</p>
+        <p>From Jaipur, I completed my high school here. I attempted JEE Mains, which motivated me to dive deep into Computer Science and programming. This experience has shaped my path and driven me to pursue my academic and professional goals in tech.</p>
     </section>
 
     <section id="skills" class="content-section">
         <h2>Skills</h2>
         <ul>
-            <li><span>💻</span> <strong>Programming Languages</strong>: Python (Beginner), C (Beginner)</li>
+            <li><span>💻</span> <strong>Programming</strong>: Python (Beginner), C (Beginner)</li>
             <li><span>🌐</span> <strong>Web Development</strong>: HTML, CSS (Beginner)</li>
-            <li><span>🔍</span> <strong>Data Structures & Algorithms</strong>: Basic understanding of DSA</li>
-            <li><span>🖥️</span> <strong>Operating Systems</strong>: Understanding of OS concepts like processes, memory management, and file systems.</li>
+            <li><span>🔍</span> <strong>Data Structures & Algorithms</strong>: Basic knowledge of DSA</li>
+            <li><span>🖥️</span> <strong>Operating Systems</strong>: Understanding of OS concepts</li>
         </ul>
-        <div class="progress-bar"><span style="width: 60%"></span></div>
-        <div class="progress-bar"><span style="width: 40%"></span></div>
-        <div class="progress-bar"><span style="width: 30%"></span></div>
+        <div class="progress-bar">
+            <span class="skill-bar" style="width: 60%"></span>
+        </div>
+        <div class="progress-bar">
+            <span class="skill-bar" style="width: 40%"></span>
+        </div>
+        <div class="progress-bar">
+            <span class="skill-bar" style="width: 30%"></span>
+        </div>
     </section>
 
     <section id="goals" class="content-section">
         <h2>Future Goals</h2>
         <ul>
-            <li>Master advanced Python programming and build real-world applications</li>
-            <li>Learn JavaScript to create interactive and dynamic websites</li>
-            <li>Publish my first novel and continue to grow as a writer</li>
+            <li>Master advanced Python programming and build projects</li>
+            <li>Learn JavaScript to build interactive websites</li>
+            <li>Publish my first novel</li>
         </ul>
     </section>
 
     <section id="contact" class="content-section">
         <h2>Contact Me</h2>
-        <p>Feel free to get in touch with me:</p>
+        <p>You can reach me via the following:</p>
         <ul>
             <li><a href="mailto:2023csmahak16315@poornima.edu.in">Email: 2023csmahak16315@poornima.edu.in</a></li>
             <li><a href="https://www.linkedin.com/in/mahaksharma/">LinkedIn: Mahak Sharma</a></li>
@@ -86,22 +92,13 @@
             const section = document.getElementById(sectionId);
             section.scrollIntoView({ behavior: 'smooth' });
         }
-
-        // Progress bar animation
-        window.addEventListener('scroll', function() {
-            const skillsSection = document.getElementById('skills');
-            const progressBars = document.querySelectorAll('.progress-bar span');
-            const skillsSectionPosition = skillsSection.getBoundingClientRect().top;
-
-            if (skillsSectionPosition < window.innerHeight) {
-                progressBars[0].style.width = "60%";
-                progressBars[1].style.width = "40%";
-                progressBars[2].style.width = "30%";
-            }
-        });
     </script>
 </body>
 </html>
 
+   
+
+   
+      
          
          
